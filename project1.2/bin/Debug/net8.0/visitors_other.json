@@ -1,0 +1,198 @@
+{
+    "elements": [
+
+      {
+        "id": "connie.resigned",
+        "label": "Constance Lee",
+        "desc":"'When it comes down to it, the Suppression Bureau's just another cabal deciding what books everyone else should read... and then reading them itself. My letter of resignation is ready. I'll send it from somewhere safe... without a return address. Here's how to reach me if you really need to...' [Connie is no longer a Visitor, and will take no further part in stories; but she may still become a founder of the Lighthouse Institute.]",
+        "icon":"connie" ,
+        "aspects":{"visitor":1,"unsociable":1,"agenda.revelation":1,"inspired":1,
+        "suitable.secretary.nunciant.surprise":1},
+        "comments":"She's not a _visitor, so the imm doesn't trigger - so we make her explicitly inspired",
+        "xtriggers":{"appointing":[{"id":"appointment.nunciant","morpheffect":"mutate","level":1}]}
+
+    },    
+
+         {
+      "id": "echidna",
+      "label": "Mrs E",
+      "desc": "The self-styled Mother of Monsters. A cheery, tubby woman in a green-grey garment like a baggy dirndl.",
+      "inherits": "_visitor",
+      "aspects": {
+        "u.hyksos":1,
+        "u.killasimi":1,
+        "u.greek":1,
+        "unsociable":1
+      },
+      "decayto": "departure.assistance",
+      "lifetime":360, "xtriggers":{"satisfying":"departure.assistance","satisfying.echidna":"departure.assistance",
+      "dissatisfying":"departure.assistance"}
+    },
+    {
+      "id": "echidna.persistent",
+      "label": "Mrs E",      
+      "desc": "The self-styled Mother of Monsters. A cheery, tubby woman in a green-grey garment like a baggy dirndl.",
+      "inherits": "_visitor",
+      "icon":"echidna",
+      "aspects": {
+        "u.hyksos":1,
+        "u.killasimi":1,
+        "u.greek":1,
+        "agenda.corrivality":1,
+        "agenda.secrecy":1,
+        "agenda.stone.consumed":1,
+        "unsociable":1,
+        "suitable.secretary.persistent.surprise":1
+      },
+      "xtriggers":{"appointing":[{"id":"appointment.persistent","morpheffect":"mutate","level":1}]},
+      "comments":"If we lose the _visitor, we'll need inspired to be explicit"
+    },
+    {
+      "id": "elie.persistent",
+      "label": "Elie's Promise",
+      "icon":"elie",
+      "desc": "Once, Black Elie was the Matriarch of the Sisters of the Triple Knot in Damascus. Now, she's an ally of Ys - and a candidate for the Lighthouse Institute.",
+      "inherits": "_visitor",
+      "aspects": {
+        "u.hyksos":1,
+        "u.killasimi":1,
+        "u.greek":1,
+        "u.phrygian":1,
+        "u.aramaic":1,
+        "agenda.peace":1,
+        "sympathy.ys":1,
+        "fear.nowhere":1,
+        "unsociable":1,
+        "suitable.secretary.salvant.surprise":1
+      },
+      "xtriggers":{"appointing":[{"id":"appointment.salvant","morpheffect":"mutate","level":1}]},
+      "comments":"If we lose the _visitor, we'll need inspired to be explicit"
+    },
+    {
+      "id": "liselotte",
+      "label": "Liselotte's Lore",
+      "desc": "Lyterion director; dietician; ally of the Blomberende-kind. Liselotte wishes to bring a case of sleeping Blomberende noble larvae, so they can find a refuge here at Hush House. [Use this card in the Hush House beehive to give them refuge - or if you decide to refuse her, return this card to Stanislav in the God in the Wood node.]",
+      "xtriggers":{"retiring.liselotte":"retiring_liselotte"},
+      "aspects":{"visitor":1,"lyterion":1,"skill":1,"unsociable":1}
+    },
+    {
+      "id": "liselotte.lyterion.new",
+      "label": "Liselotte's Feat",
+      "desc": "Liselotte - Lyterion director; dietician; ally of the Blomberende-kind - has installed her 'landgravines-in-exile' in the Hush House beehive. [Return this card to Stanislav in the God in the Wood node.]",
+      "icon":"liselotte",
+      "xtriggers":{"retiring.liselotte":"retiring_liselotte"},
+      "aspects":{"visitor":1,"unsociable":1}
+    },
+
+    {
+      "id": "retiring_liselotte",
+      "label": "Liselotte, Departing",
+      "desc": "Liselotte - Lyterion director; dietician; ally of the Blomberende-kind - is gone into the world. Perhaps the Suppression Bureau will not look for her.",
+      "icon":"liselotte",
+      "lifetime":5
+    },
+
+    {
+      "id": "rowena.persistent",
+      "label": "Rowena's Burden",
+      "icon":"rowena",
+      "desc": "Rowena, caught between moon and tide, blood and gold, Ys and the Marches, has long embraced her punishment. She will serve as protectress still, even while her appetites fade and the sea takes what's left of her, wave by lapping wave. Until she is gone, the Mare's Key remains her burden, hers alone.",
+      "aspects": {
+        "appointment.persistent":1,
+        "agenda.secrecy":1,
+        "fear.ys":1,
+        "inspired":1
+      }
+    },
+
+    {
+      "id": "spencer.enroute.out",
+      "label": "Spencer Hobson: Next Numa",
+      "icon":"spencer",
+      "desc": "Spencer will arrive with Numa.",
+"xtriggers":{"numa.other.visitors.arrive":"spencer.out"}
+    },
+    {
+      "id": "spencer.enroute.down",
+      "label": "Spencer Hobson: Next Numa",
+      "icon":"spencer",
+      "desc": "Spencer will arrive with Numa.",
+"xtriggers":{"numa.other.visitors.arrive":"spencer.down"}
+    },
+    {
+      "id": "spencer.out",
+      "label": "Spencer Hobson",
+      "desc": "Spencer has been a number of things: journalist, private detective, priest, Suppression Bureau irregular. He's still a number of things. That might not be a problem. He's disinclined to speak. He hopes to visit the Rowenarium beneath Hush House - to pass through it - to go 'out' somewhere. [Take him to the Rowenarium, or refuse entry by returning him to the Endless Guest node. Note that Spencer arrives with Numa, but he will lurk in the Cornish mists even after Numa is over, until you resolve his business.]",
+      "icon":"spencer",
+      "xtriggers":{"retiring.spencer":"fleeting"},
+      "aspects": {"key":1,"memory":1,"numatic":1,"spencer":1}
+    },
+    {
+      "id": "spencer.down",
+      "label": "Spencer Hobson",
+      "desc": "Spencer has been a number of things: journalist, private detective, priest, Suppression Bureau irregular. He's still a number of things. That might not be a problem. He's disinclined to speak.  He hopes to visit the Rowenarium beneath Hush House - to pass through it - to go 'down' somewhere [Take him to the Rowenarium, or refuse entry by returning him to the Endless Guest node. Note that Spencer arrives with Numa, but he will lurk in the Cornish mists even after Numa is over, until you resolve his business.]",
+      "icon":"spencer",
+      "xtriggers":{"retiring.spencer":"fleeting"},
+      "aspects": {"key":1,"memory":1,"numatic":1,"spencer":1}
+    },
+
+    {
+      "id": "spencer.trace",
+      "label": "Spencer's Space",
+      "desc": "This is where Spencer was. [Return this to the Endless Guest node.]",
+      "xtriggers":{"retiring.spencer":"fleeting"},
+      "aspects": {"memory":1,"numatic":1}
+    },
+
+    {
+      "id": "wisp.agdistis",
+      "label": "Agdistis' Wisp",
+      "icon":"wisp",
+      "audio":"wisp",
+      "desc": "A 'poor wisp' preserved by Agdistis from the Grunewald disaster. Cooing, mewing, warm to the touch. Notionally harmless. [Agdistis has asked you to place this in the Chrysalis that you can find in the Cucurbit, but you could destroy it in the furnace if you were suspicious.]",
+      "aspects":{"memory":1,"fuel":1}
+    },
+    {
+      "id": "wisp.skin.agdistis",
+      "icon":"wisp.trace.chrysalis",
+      "audio":"wisp",
+      "label": "Agdistis' Wisp: Shed Skin",
+      "desc": "The shed skin of a 'poor wisp' preserved by Agdistis from the Grunewald disaster. The wisp itself now resides in the Chrysalis. [Return this to Agdistis.]",
+      "xtriggers":{"retiring.wisp":"fleeting"},
+      "aspects":{"memory":1}
+    },
+    {
+      "id": "wisp.trace.agdistis",
+      "label": "Agdistis' Wisp: Cindered Trace",
+      "icon":"wisp.trace.crucible",
+      "desc": "The charred remains of a 'poor wisp' preserved by Agdistis from the Grunewald disaster. It probably wasn't as harmless as it seemed... [Return this to Agdistis.]",
+      "xtriggers":{"retiring.wisp":"fleeting"},
+      "aspects":{"memory":1}
+    },
+    {
+      "id": "wisp.ehsan",
+      "label": "Ehsan's Wisp",
+      "icon":"wisp",
+      "desc": "A 'poor wisp' preserved by Ehsan from the Grunewald disaster. Cooing, mewing, warm to the touch.  Notionally harmless. [Ehsan has asked you to place this in the Chrysalis that you can find in the Cucurbit, but you could destroy it in the furnace if you were suspicious.]",
+     "aspects":{"memory":1,"fuel":1}
+    },
+    {
+      "id": "wisp.skin.ehsan",
+      "label": "Ehsan's Wisp: Shed Skin",
+      "icon":"wisp.trace.chrysalis",
+      "desc": "The shed skin of a 'poor wisp' preserved by Ehsan from the Grunewald disaster. The wisp itself now resides in the Chrysalis. [Return this to Ehsan.]",
+      "xtriggers":{"retiring.wisp":"fleeting"},
+      "aspects":{"memory":1}
+    },
+    {
+      "id": "wisp.trace.ehsan",
+      "label": "Ehsan's Wisp: Cindered Trace",
+      "icon":"wisp.trace.crucible",
+      "desc": "The charred remains of a 'poor wisp' preserved by Ehsan from the Grunewald disaster.  It probably wasn't as harmless as it seemed... [Return this to Ehsan.]",
+      "xtriggers":{"retiring.wisp":"fleeting"},
+      "aspects":{"memory":1}
+    }
+
+
+    ]
+}
