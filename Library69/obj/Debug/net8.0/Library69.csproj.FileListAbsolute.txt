@@ -1,0 +1,12 @@
+C:\Games\visual studio\project1.2\Library69\bin\Debug\net8.0\Library69.deps.json
+C:\Games\visual studio\project1.2\Library69\bin\Debug\net8.0\Library69.dll
+C:\Games\visual studio\project1.2\Library69\bin\Debug\net8.0\Library69.pdb
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\Library69.GeneratedMSBuildEditorConfig.editorconfig
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\Library69.AssemblyInfoInputs.cache
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\Library69.AssemblyInfo.cs
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\Library69.csproj.CoreCompileInputs.cache
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\Library69.dll
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\refint\Library69.dll
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\Library69.pdb
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\ref\Library69.dll
+C:\Games\visual studio\project1.2\Library69\obj\Debug\net8.0\Library69.csproj.AssemblyReference.cache
